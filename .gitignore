@@ -1,0 +1,91 @@
+#--------------------------------------------------------------------------------------
+# .gitignore for a combined Angular and .NET project
+# This file is placed in the root directory of your repository.
+#--------------------------------------------------------------------------------------
+
+# --- .NET specific ignores ---
+## Generic .NET / Visual Studio
+[Aa]rtifacts/
+[Bb]in/
+[Bb]uild/
+[Dd]ebug/
+[Oo]bj/
+[Rr]elease/
+*.booproj
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.usercode
+*.vspscc
+*.vssscc
+
+# Visual Studio 2017+
+.vs/        # Ignore the entire .vs folder
+!**/.vs/*.config # Except for files that are essential for the IDE to work
+
+# Project files
+*.log
+*.pfx
+*.pid
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Misc
+[Tt]humbs.db
+*.cache
+*.ocx
+*.oss
+*.rsp
+*.tlb
+*.tmp
+*.vsix
+*.webinfo
+*.yml
+
+# IDE specific files
+.idea/ # For Rider
+*.swp # For Vim
+
+# Azure
+*.publishsettings
+
+# Dependency folders
+node_modules/
+bower_components/
+
+# NPM
+npm-debug.log
+yarn-error.log
+
+# --- Angular specific ignores ---
+# Compiled output
+/dist/
+/out-tsc/
+
+# Node modules
+node_modules/
+
+# IDE files and caches
+.angular/cache # Exclude the Angular CLI cache
+.c9/
+.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/settings.json
+.history/
+
+# Logs
+*.log
+
+# build-analytics
+.build-analytics
+
+# User-specific settings (local only)
+.bazelrc.user
+.ng-dev.user*
+.notes.md

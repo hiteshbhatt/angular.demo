@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\frontend\\Angular\\angular.demo\\EventTech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|d:\\frontend\\angular\\angular.demo\\eventtech\\eventtech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|solutionrelative:eventtech.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|d:\\frontend\\angular\\angular.demo\\eventtech\\eventtech.api\\eventtech.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|solutionrelative:eventtech.api\\eventtech.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|d:\\frontend\\angular\\angular.demo\\eventtech\\eventtech.api\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|solutionrelative:eventtech.api\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|d:\\frontend\\angular\\angular.demo\\eventtech\\eventtech.api\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E6E1889-5FA0-4DAE-8AF4-7765BAE42A24}|EventTech.API\\EventTech.API.csproj|solutionrelative:eventtech.api\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Program.cs",
+              "RelativeDocumentMoniker": "EventTech.API\\Program.cs",
+              "ToolTip": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Program.cs",
+              "RelativeToolTip": "EventTech.API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T13:40:32.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventTech.API.http",
+              "DocumentMoniker": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\EventTech.API.http",
+              "RelativeDocumentMoniker": "EventTech.API\\EventTech.API.http",
+              "ToolTip": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\EventTech.API.http",
+              "RelativeToolTip": "EventTech.API\\EventTech.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-15T12:52:13.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VendorController.cs",
+              "DocumentMoniker": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Controllers\\VendorController.cs",
+              "RelativeDocumentMoniker": "EventTech.API\\Controllers\\VendorController.cs",
+              "ToolTip": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Controllers\\VendorController.cs",
+              "RelativeToolTip": "EventTech.API\\Controllers\\VendorController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:46:18.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Vendor.cs",
+              "RelativeDocumentMoniker": "EventTech.API\\Vendor.cs",
+              "ToolTip": "D:\\frontend\\Angular\\angular.demo\\EventTech\\EventTech.API\\Vendor.cs",
+              "RelativeToolTip": "EventTech.API\\Vendor.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T12:43:41.83Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@EventTech.API_HostAddress = http://localhost:5126
+
+GET {{EventTech.API_HostAddress}}/api/vendor/
+Accept: application/json
+
+###
