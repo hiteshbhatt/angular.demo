@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <form [formGroup]="frm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="productName">ProductName</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productName"
+            formControlName="productName"
+          />
+          @if(frm.controls['productName'].invalid &&
+          (frm.controls['productName'].dirty ||
+          frm.controls['productName'].touched)) {
+          @if(frm.controls['productName'].hasError('required')){
+          <span class="text-danger">Product Name is required.</span>
+          } @else if(frm.controls['productName'].hasError('maxlength')){
+          <span class="text-danger"
+            >Product Name must be at least 6 characters long.</span
+          >
+          }}
+        </div>
+
+        <div class="form-group">
+          <label for="productCode">ProductCode</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productCode"
+            name="productCode"
+            formControlName="productCode"
+          />
+          @if(frm.controls['productCode'].invalid &&
+          (frm.controls['productCode'].dirty ||
+          frm.controls['productCode'].touched)) {
+          @if(frm.controls['productCode'].hasError('required')) {
+          <span class="text-danger">Product Code is required.</span>
+          } @if(frm.controls['productCode'].hasError('invalidCode')) {
+          <span class="text-danger">Product Code must start with A</span>
+          } }
+        </div>
+        <div class="form-group">
+          <label for="productPrice">ProductPrice</label>
+          <input
+            type="number"
+            class="form-control"
+            id="productPrice"
+            name="productPrice"
+            formControlName="productPrice"
+          />
+          @if(frm.controls['productPrice'].invalid &&
+          frm.controls['productPrice'].dirty &&
+          frm.controls['productPrice'].touched &&
+          frm.controls['productPrice'].errors){
+          @if(frm.controls['productPrice'].hasError('required')) {
+          <span class="text-danger">Product Price is required.</span>
+          } }
+        </div>
+        <div formGroupName="description">
+          <div class="form-group">
+            <label for="shortDescription">shortDescription</label>
+            <input
+              type="number"
+              class="form-control"
+              id="shortDescription"
+              name="shortDescription"
+              formControlName="shortDescription"
+            />
+          </div>
+          <div class="form-group">
+            <label for="longDescription">longDescription</label>
+            <input
+              type="number"
+              class="form-control"
+              id="longDescription"
+              name="longDescription"
+              formControlName="longDescription"
+            />
+          </div>
+        </div>
+        <div class="formGroup" formArrayName="languages">
+          <input
+            type="text"
+            class="form-control"
+            *ngFor="let control of languages.controls; let i = index"
+            [formControlName]="i"
+            placeholder="Enter Language"
+          />
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="addLanguage()">
+          add Languages
+        </button>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+        <button class="btn btn-primary" (click)="enableValidation()">
+          EnableValidation
+        </button>
+        <button class="btn btn-warning" (click)="reset()">Reset</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<p>directive-sample works!</p>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" [(ngModel)]="num" class="form-control" />
+    </div>
+
+    <div *ngIf="num % 2 == 0; then ifBlock; else elseBlock"></div>
+    <ng-template #ifBlock>
+      <p>Even number</p>
+    </ng-template>
+    <ng-template #elseBlock>
+      <p>Odd number</p>
+    </ng-template>
+    <h2>*ngFor</h2>
+    @if(num%2==0){
+    <p>Even number</p>
+    } @else {
+    <p>Odd number</p>
+    }
+    <ul>
+      <li *ngFor="let c of colors">{{ c }}</li>
+    </ul>
+    <!-- @for (c of colors; track $index) {
+    <li>{{ c + $index }}</li>
+    > } -->
+    <label>Select Color</label>
+    <!-- <select [(ngModel)]="selectedColor" class="form-select">
+      <option *ngFor="let c of colors">{{ c }}</option>
+    </select> -->
+
+    <select
+      [(ngModel)]="selectedColor"
+      class="form-select"
+      aria-label="Default select example"
+    >
+      <option *ngFor="let c of colors">{{ c }}</option>
+    </select>
+    <table class="table table-responsive">
+      <thead>
+        <th>SrNo</th>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let product of products; let i = index"
+          [style.color]="selectedColor"
+          class="r1"
+        >
+          <td>{{ i + 1 }}</td>
+          <td>{{ product.productId }}</td>
+          <td>{{ product.productName }}</td>
+          <td>{{ product.productPrice }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table table table-dark table-striped>
+      <thead>
+        <th>SrNo</th>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+      </thead>
+      <tbody>
+        @for(product of products; track $index) {
+        <tr [style.color]="selectedColor" class="r1">
+          <td>{{ $index + 1 }}</td>
+          <td>{{ product.productId }}</td>
+          <td>{{ product.productName }}</td>
+          <td>{{ product.productPrice }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+
+    <hr />
+    <h2>Custom Directives</h2>
+    <div appCustom [color]="selectedColor">Change color to lightblue div</div>
+    <span appCustom [color]="selectedColor"
+      >change color to lightblue span
+    </span>
+  </div>
+  <div class="col-lg-6">
+    <h4>Route Parameter: {{ id }}</h4>
+    <h4>Route QueryParams: city: {{ city }} and country:{{ country }}</h4>
+  </div>
+</div>
