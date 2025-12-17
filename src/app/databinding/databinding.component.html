@@ -1,0 +1,21 @@
+<p>databinding works!</p>
+<div>
+  <h4>Interpolation</h4>
+  <p style="background-color: aqua">
+    <span style="color: blueviolet">productName: {{ productName }}</span>
+  </p>
+</div>
+<div>
+  <h4>Property binding</h4>
+  <input type="text" [value]="productName" />
+</div>
+<div>
+  <h4>Event binding</h4>
+  <button (click)="onClickMe()">Click me!</button>
+  <p>{{ productPrice }}</p>
+</div>
+<div>
+  <h4>Two way binding property[]+ Event binding()</h4>
+  <input type="text" [(ngModel)]="productName" />
+  <p>{{ productName }}</p>
+</div>

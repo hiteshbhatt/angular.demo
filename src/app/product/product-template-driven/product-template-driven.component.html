@@ -1,0 +1,73 @@
+<p>product-template-driven works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+        <div class="form-group">
+          <label for="productName">ProductName</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productName"
+            name="productName"
+            [(ngModel)]="product.productName"
+            #productName="ngModel"
+            required
+            minlength="6"
+          />
+          @if(productName.invalid && (productName.dirty || productName.touched))
+          { @if(productName.hasError('required')) {
+          <div class="alert alert-danger">Product Name is required.</div>
+          } @if(productName.hasError('minlength')) {
+          <div class="alert alert-danger">
+            Product Name must be at least 6 characters long.
+          </div>
+          } }
+        </div>
+        <div class="form-group">
+          <label for="productCode">ProductCode</label>
+          <input
+            type="text"
+            class="form-control"
+            id="productCode"
+            name="productCode"
+            [(ngModel)]="product.productCode"
+            required
+          />
+          @if(productForm.controls["productCode"].invalid &&
+          (productForm.controls["productCode"].dirty ||
+          productForm.controls["productCode"].touched)) {
+          @if(productForm.controls["productCode"].hasError('required')) {
+          <span class="text-danger">Product Code is required.</span>
+          }}
+        </div>
+        <div class="form-group">
+          <label for="productPrice">ProductPrice</label>
+          <input
+            type="number"
+            class="form-control"
+            id="productPrice"
+            name="productPrice"
+            [(ngModel)]="product.productPrice"
+            #productPrice="ngModel"
+            required
+          />
+          @if(productPrice.invalid && (productPrice.dirty ||
+          productPrice.touched)) { @if(productPrice.hasError('required')) {
+          <div class="alert alert-danger">Product Price is required.</div>
+          } @if(productPrice.hasError('number')) {
+          <div class="alert alert-danger">
+            Product Price must be greater than 0.
+          </div>
+          } }
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary"
+          value="Submit"
+          [disabled]="productForm.invalid"
+        />
+      </form>
+    </div>
+  </div>
+</div>

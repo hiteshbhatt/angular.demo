@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "aJRN+nHH6MPDfmqrUNvmd15lfcBFDTe5NwwP+kArK50=",
+  "Source": "EventTech.API",
+  "BasePath": "_content/EventTech.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
